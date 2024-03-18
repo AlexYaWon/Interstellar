@@ -224,14 +224,14 @@ function AB() {
   if (!inFrame && !navigator.userAgent.includes('Firefox')) {
     const popup = open('about:blank', '_blank')
     if (!popup || popup.closed) {
-      alert('Please allow popups and redirects.')
+      alert('Please allow popups and redirects! :)')
     } else {
       const doc = popup.document
       const iframe = doc.createElement('iframe')
       const style = iframe.style
       const link = doc.createElement('link')
-      const name = localStorage.getItem('name') || 'My Drive - Google Drive'
-      const icon = localStorage.getItem('icon') || 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png'
+      const name = localStorage.getItem('name') || 'Dashboard'
+      const icon = localStorage.getItem('icon') || 'https://www.instructure.com/sites/default/files/image/2021-12/Canvas_logo_single_mark.png'
       doc.title = name
       link.rel = 'icon'
       link.href = icon
