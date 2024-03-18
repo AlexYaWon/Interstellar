@@ -16,8 +16,8 @@ if (!inFrame && !navigator.userAgent.includes('Firefox')) {
     const style = iframe.style
     const link = doc.createElement('link')
 
-    const name = localStorage.getItem('name') || 'Canvas'
-    const icon = localStorage.getItem('icon') || 'https://www.instructure.com/sites/default/files/image/2021-12/Canvas_logo_single_mark.png'
+    const name = localStorage.getItem('name') || 'New Tab'
+    const icon = localStorage.getItem('icon') || ''
 
     doc.title = name
     link.rel = 'icon'
