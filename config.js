@@ -3,7 +3,7 @@ const config = {
   users: {
     // You can add multiple users by doing username: 'password'.
     Emil: 'EmilPro123',
-    Alex: 'AlexTheOwner',
+    Alex: 'AlexTheOwnerP',
     Extra: 'ExtraAccountEz',
   },
   routes: true, // Change this to false if you just want to host a bare server.
