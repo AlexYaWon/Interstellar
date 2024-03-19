@@ -1,6 +1,6 @@
 const iframe = document.getElementById('ifra')
 
-window.addEventListener('mousemove', function(event) {
+document.addEventListener('mousemove', function(event) {
     const cursorLight = document.querySelector('.cursor-light');
     cursorLight.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
 });
