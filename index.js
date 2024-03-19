@@ -68,10 +68,25 @@ const fetchData = async (req, res, next, baseUrl) => {
     next(error)
   }
 }
+
+// Function to replace "Interstellar" with "Alexstellar"
+const replaceTitleText = (html) => {
+  return html.replace(/Interstellar/g, 'Alexstellar');
+};
+
 server.on('request', (req, res) => {
   if (bareServer.shouldRoute(req)) {
     bareServer.routeRequest(req, res)
   } else {
+    // Check if response is HTML and replace title text if necessary
+    const originalWrite = res.write;
+    res.write = function (chunk, encoding, callback) {
+      if (chunk && res.getHeader('Content-Type')?.includes('text/html')) {
+        chunk = replaceTitleText(chunk.toString());
+      }
+      return originalWrite.call(this, chunk, encoding, callback);
+    };
+
     app(req, res)
   }
 })
