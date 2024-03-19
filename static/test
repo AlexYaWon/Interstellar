@@ -1,5 +1,0 @@
-var titleElement = document.querySelector('.title');
-
-if (titleElement && titleElement.textContent === "Interstellar") {
-    titleElement.textContent = "Alexstellar";
-}
