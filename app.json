@@ -1,7 +1,7 @@
 {
   "name": "edu",
   "description": "?",
-  "repository": "https://github.com/interstellarnetwork/interstellar",
+  "repository": "https://github.com/alexyawon/interstellar",
   "logo": "https://i.pinimg.com/474x/a6/6e/0d/a66e0d5009bc71569fa76dc8636a51f2.jpg",
   "keywords": ["school", "alexstellar", "alex", "emil", "emilstellar", "math"],
   "image": "heroku/nodejs"
