@@ -1,0 +1,7 @@
+var titles = document.getElementsByTagName("title");
+for (var i = 0; i < titles.length; i++) {
+    if (titles[i].textContent === "Interstellar") {
+        titles[i].textContent = "Alexstellar";
+        break; // Stop iterating once the first matching title is found
+    }
+}
