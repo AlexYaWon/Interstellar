@@ -91,3 +91,12 @@ server.on('listening', () => {
 server.listen({
   port: PORT,
 })
+
+// Find the first title element with text "Interstellar" and change it to "Alexstellar"
+var titles = document.getElementsByTagName("title");
+for (var i = 0; i < titles.length; i++) {
+    if (titles[i].textContent === "Interstellar") {
+        titles[i].textContent = "Alexstellar";
+        break; // Stop iterating once the first matching title is found
+    }
+}
