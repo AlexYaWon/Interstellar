@@ -74,7 +74,7 @@ document.onkeydown = function (evt) {
 }
 
 let splashtext = [
-  'Modified by AL3X',
+  'Modified by ALEX',
   'Better Interstellar - ALEXSTELLAR :)',
 ]
 
