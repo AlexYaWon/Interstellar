@@ -47,13 +47,19 @@ if (config.local !== false) {
     const baseUrl = 'https://raw.githubusercontent.com/ypxa/y/main'
     fetchData(req, res, next, baseUrl)
   })
-
+const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_beryllium.txt'
+const response = await fetch(url1);
+const data = await response.text();
+console.log(data);
   app.get('/f/*', (req, res, next) => {
     const baseUrl = 'https://raw.githubusercontent.com/4x-a/x/fixy'
     fetchData(req, res, next, baseUrl)
   })
 }
-
+const url1 = 'https://raw.githubusercontent.com/4x-a/x/fixy'
+const response = await fetch(url1);
+const data = await response.text();
+console.log(data);
 const fetchData = async (req, res, next, baseUrl) => {
   try {
     const reqTarget = `${baseUrl}/${req.params[0]}`
