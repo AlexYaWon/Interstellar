@@ -142,3 +142,14 @@ iframe {
   height: 30px;
   border-radius: 5px;
 }
+
+.cursor-light {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as needed */
+    pointer-events: none; /* Allows clicks to pass through */
+    transition: transform 0.1s ease; /* Add smooth transition */
+}
+
