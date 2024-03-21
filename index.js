@@ -107,4 +107,3 @@ server.listen({
   port: PORT,
 })
 
-import { Analytics } from "@vercel/analytics/react"
