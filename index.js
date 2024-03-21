@@ -14,7 +14,6 @@ const PORT = process.env.PORT || 8080
 if (config.challenge) {
   console.log('Password protection is enabled. Usernames are: ' + Object.keys(config.users))
   console.log('Passwords are: ' + Object.values(config.users))
-  <Analytics />
 
   app.use(
     basicAuth({
@@ -108,4 +107,4 @@ server.on('listening', () => {
 server.listen({
   port: PORT,
 })
-
+<Analytics />
