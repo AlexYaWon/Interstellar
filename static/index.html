@@ -1,5 +1,4 @@
 <!doctype html>
-import { Analytics } from '@vercel/analytics/react'
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,13 +22,16 @@ import { Analytics } from '@vercel/analytics/react'
         <a class="navbar-link" href="/./0"><i class="fa-solid fa-laptop navbar-icon"></i>Tabs</a>
         <a class="navbar-link" href="/./!"><i class="fa-solid fa-gear navbar-icon settings-icon"></i>Settings</a>
       </div>
-      <Analytics/>
+      import { Analytics } from '@vercel/analytics/react'
+      import { SpeedInsights } from '@vercel/speed-insights/next'
     </div>
     <div id="particles-js">
       <script rel="preload" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
       <div class="main">
         <h1 class="title">Alexstellar</h1>
         <p id="splash">Unknown</p>
+         <Analytics/>
+         <SpeedInsights/>
         <div class="search-container">
           <form id="fs" method="POST">
             <input id="is" class="main-search" placeholder="Search with Google or enter address" type="text" />
